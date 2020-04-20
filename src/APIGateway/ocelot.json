@@ -1,0 +1,53 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/Employee",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "employeeservice",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/Employee/EmpDetail",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    
+    {
+      "DownstreamPathTemplate": "/api/ProjectDetail",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "projectdetailservice",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/Project/ProjectDetail",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/authenticate",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "identityservice",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/user/authenticate",
+      "UpstreamHttpMethod": [ "Post" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    //"BaseUrl": "http://localhost:8000",
+    "UseServiceDiscovery": false
+  }
+}

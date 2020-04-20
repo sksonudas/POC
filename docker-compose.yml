@@ -1,0 +1,46 @@
+version: '3'
+services:
+
+ APIEmployee:
+   image: employeeservice:latest
+   container_name: employeeservice
+   build:
+     context: ./src/EmployeeService
+     dockerfile: Dockerfile
+   environment:
+     - ASPNETCORE_ENVIRONMENT=Development
+   ports:
+     - "8002:80"
+       
+ APIProjectDetail:
+   image: projectdetailservice:latest
+   container_name: projectdetailservice
+   build:
+     context: ./src/ProjectDetailService
+     dockerfile: Dockerfile
+   environment:
+     - ASPNETCORE_ENVIRONMENT=Development
+   ports:
+     - "8003:80"
+
+ APIIdentityService:
+   image: identityservice:latest
+   container_name: identityservice
+   environment:
+     - ASPNETCORE_ENVIRONMENT=Development
+   build:
+     context: ./src/Identity
+     dockerfile: Dockerfile
+   ports:
+     - "8001:80"
+
+ APIGateway:
+   image: apigateway:latest
+   container_name: apigateway
+   environment:
+     - ASPNETCORE_ENVIRONMENT=Development
+   build:
+     context: ./src/apigateway
+     dockerfile: Dockerfile
+   ports:
+     - "8000:80"

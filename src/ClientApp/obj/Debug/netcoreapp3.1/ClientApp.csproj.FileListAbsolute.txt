@@ -1,0 +1,15 @@
+D:\POC\src\ClientApp\bin\Debug\netcoreapp3.1\ClientApp.exe
+D:\POC\src\ClientApp\bin\Debug\netcoreapp3.1\ClientApp.deps.json
+D:\POC\src\ClientApp\bin\Debug\netcoreapp3.1\ClientApp.runtimeconfig.json
+D:\POC\src\ClientApp\bin\Debug\netcoreapp3.1\ClientApp.runtimeconfig.dev.json
+D:\POC\src\ClientApp\bin\Debug\netcoreapp3.1\ClientApp.dll
+D:\POC\src\ClientApp\bin\Debug\netcoreapp3.1\ClientApp.pdb
+D:\POC\src\ClientApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\POC\src\ClientApp\obj\Debug\netcoreapp3.1\ClientApp.csprojAssemblyReference.cache
+D:\POC\src\ClientApp\obj\Debug\netcoreapp3.1\ClientApp.csproj.CoreCompileInputs.cache
+D:\POC\src\ClientApp\obj\Debug\netcoreapp3.1\ClientApp.AssemblyInfoInputs.cache
+D:\POC\src\ClientApp\obj\Debug\netcoreapp3.1\ClientApp.AssemblyInfo.cs
+D:\POC\src\ClientApp\obj\Debug\netcoreapp3.1\ClientApp.csproj.CopyComplete
+D:\POC\src\ClientApp\obj\Debug\netcoreapp3.1\ClientApp.dll
+D:\POC\src\ClientApp\obj\Debug\netcoreapp3.1\ClientApp.pdb
+D:\POC\src\ClientApp\obj\Debug\netcoreapp3.1\ClientApp.genruntimeconfig.cache
